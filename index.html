@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- source -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- navegacion -->
+    <header
+      class="flex justify-between w-full p-2 bg-neutral-300 border-b border-neutral-300 text-neutral-700">
+      <!-- logo o marca -->
+      <div class="w-60 shrink">
+        <span class="text-md font-semibold uppercase">logo</span>
+      </div>
+      <!-- enlaces -->
+      <nav class="w-2/3 grow flex justify-evenly text-sm">
+        <a href="#">dashboard</a>
+        <a href="#">stock</a>
+        <a href="#">proveedores</a>
+        <a href="#">ventas</a>
+        <a href="#">productos</a>
+      </nav>
+      <!-- seccion de notificaciones -->
+      <div class="w-1/6 shrink flex justify-end">
+        <span>notific.</span>
+      </div>
+      <!-- seccion de usuario -->
+      <div class="w-1/6 shrink flex justify-end">
+        <span>usuario</span>
+      </div>
+    </header>
+    <!-- principal -->
+    <main class="w-full mb-2 flex flex-col items-center text-neutral-800">
+      <!-- seccion principal titulo -->
+      <section
+        class="w-full flex items-center justify-between h-8 px-1 bg-neutral-200">
+        <span class="text-md capitalize">titulo de vista</span>
+      </section>
+      <!-- seccion principal contenido -->
+      <section class="">
+        <!-- articulo de contenido -->
+        <article class="container m-2 border rounded border-neutral-200">
+          <!-- seccion de cabecera -->
+          <section
+            class="flex items-center justify-between px-1 bg-neutral-200">
+            <span class="text-sm capitalize">titulo de seccion</span>
+            <!-- grupo de botones -->
+            <div class="flex">
+              <a
+                href="#"
+                role="boton"
+                class="flex justify-center items-center box-border w-fit h-6 m-2 p-1 border-solid border rounded border-neutral-200 bg-neutral-100 text-center text-neutral-600 uppercase text-xs"
+                >editar</a
+              >
+              <a
+                href="#"
+                role="boton"
+                class="flex justify-center items-center box-border w-fit h-6 m-2 p-1 border-solid border rounded border-neutral-200 bg-neutral-100 text-center text-neutral-600 uppercase text-xs"
+                >editar</a
+              >
+            </div>
+          </section>
+          <!-- seccion de contenido -->
+          <section class="flex mt-2 px-1">
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis nulla id sapiente saepe natus nemo a, minima
+              perspiciatis iste. Deleniti sit consequuntur sint repellat at
+              perferendis voluptatem vel sapiente soluta?
+            </p>
+          </section>
+          <!-- seccion de pie -->
+          <section class="flex items-center justify-end mt-2 px-1 border-t">
+            <!-- grupo de botones -->
+            <div class="flex">
+              <a
+                href="#"
+                role="boton"
+                class="flex justify-center items-center box-border w-fit h-6 m-2 p-1 border-solid border rounded border-neutral-200 bg-neutral-100 text-center text-neutral-600 uppercase text-xs"
+                >editar</a
+              >
+              <a
+                href="#"
+                role="boton"
+                class="flex justify-center items-center box-border w-fit h-6 m-2 p-1 border-solid border rounded border-neutral-200 bg-neutral-100 text-center text-neutral-600 uppercase text-xs"
+                >editar</a
+              >
+            </div>
+          </section>
+        </article>
+        <!-- botones -->
+        <div class="container flex flex-wrap m-2 p-4" role="grupo-de-botones">
+          <!-- botones con texto -->
+          <a
+            href="#"
+            role="boton"
+            class="flex justify-center items-center box-border w-fit h-6 m-2 p-1 border-solid border rounded border-blue-600 bg-blue-600 text-center text-neutral-100 uppercase text-xs"
+            >aceptar</a
+          >
+          <a
+            href="#"
+            role="boton"
+            class="flex justify-center items-center box-border w-fit h-6 m-2 p-1 border-solid border rounded border-neutral-600 bg-neutral-600 text-center text-neutral-100 uppercase text-xs"
+            >cancelar</a
+          >
+          <a
+            href="#"
+            role="boton"
+            class="flex justify-center items-center box-border w-fit h-6 m-2 p-1 border-solid border rounded border-emerald-600 bg-emerald-600 text-center text-neutral-100 uppercase text-xs"
+            >guardar</a
+          >
+          <a
+            href="#"
+            role="boton"
+            class="flex justify-center items-center box-border w-fit h-6 m-2 p-1 border-solid border rounded border-red-600 bg-red-600 text-center text-neutral-100 uppercase text-xs"
+            >eliminar</a
+          >
+          <a
+            href="#"
+            role="boton"
+            class="flex justify-center items-center box-border w-fit h-6 m-2 p-1 border-solid border rounded border-neutral-200 bg-neutral-100 text-center text-neutral-600 uppercase text-xs"
+            >editar</a
+          >
+          <a
+            href="#"
+            role="boton"
+            class="flex justify-center items-center box-border w-fit h-6 m-2 p-1 border-solid border rounded border-neutral-200 bg-neutral-100 text-center text-neutral-600 uppercase text-xs"
+            >mucho texto dentro</a
+          >
+          <!-- botones con icono -->
+          <a
+            href="#"
+            role="boton"
+            class="flex justify-center items-center box-border w-fit h-6 m-2 px-1 border-solid border rounded border-neutral-200 bg-neutral-100 text-center text-neutral-600 uppercase text-xs"
+            ><img src="./icons/trash-solid.svg" alt="borrar" class="w-4 h-4"
+          /></a>
+          <a
+            href="#"
+            role="boton"
+            class="flex justify-center items-center box-border w-fit h-6 m-2 px-1 border-solid border rounded border-neutral-200 bg-neutral-100 text-center text-neutral-600 uppercase text-xs"
+            ><img src="./icons/eye-solid.svg" alt="ver" class="w-4 h-4"
+          /></a>
+          <a
+            href="#"
+            role="boton"
+            class="flex justify-center items-center box-border w-fit h-6 m-2 px-1 border-solid border rounded border-neutral-200 bg-neutral-100 text-center text-neutral-600 uppercase text-xs"
+            ><img
+              src="./icons/pen-to-square-solid.svg"
+              alt="editar"
+              class="w-4 h-4"
+          /></a>
+          <a
+            href="#"
+            role="boton"
+            class="flex justify-center items-center box-border w-fit h-6 m-2 px-1 border-solid border rounded border-neutral-200 bg-neutral-100 text-center text-neutral-600 uppercase text-xs"
+            ><img src="./icons/user-solid.svg" alt="usuario" class="w-4 h-4"
+          /></a>
+        </div>
+        <!-- articulo de contenido con tabla -->
+        <article class="container m-2 border rounded border-neutral-200">
+          <!-- seccion de cabecera -->
+          <section
+            class="flex items-center justify-between px-1 bg-neutral-200">
+            <span class="text-sm capitalize">titulo de seccion</span>
+            <!-- grupo de botones -->
+            <div class="flex"></div>
+          </section>
+          <!-- seccion de contenido -->
+          <section class="flex mt-2 px-1">
+            <!-- tabla -->
+            <table
+              class="w-full table-auto border-collapse border rounded capitalize">
+              <thead class="border text-sm font-medium">
+                <tr class="border">
+                  <th class="border text-left p-0.5">columna</th>
+                  <th class="border text-left p-0.5">columna</th>
+                  <th class="border text-left p-0.5">columna</th>
+                  <th class="border text-left p-0.5">acciones</th>
+                </tr>
+              </thead>
+              <tbody class="border text-sm font-normal">
+                <tr class="border">
+                  <td class="border p-0.5">prueba</td>
+                  <td class="border p-0.5">texto de prueba</td>
+                  <td class="border p-0.5">1961</td>
+                  <td class="flex justify-end p-0.5">
+                    <a
+                      href="#"
+                      role="boton"
+                      class="flex justify-center items-center box-border w-fit h-6 mx-1 px-1 border-solid border rounded border-neutral-200 bg-neutral-100 text-center text-neutral-600 uppercase text-xs"
+                      ><img
+                        src="./icons/trash-solid.svg"
+                        alt="borrar"
+                        class="w-4 h-4"
+                    /></a>
+                    <a
+                      href="#"
+                      role="boton"
+                      class="flex justify-center items-center box-border w-fit h-6 mx-1 px-1 border-solid border rounded border-neutral-200 bg-neutral-100 text-center text-neutral-600 uppercase text-xs"
+                      ><img
+                        src="./icons/eye-solid.svg"
+                        alt="ver"
+                        class="w-4 h-4"
+                    /></a>
+                  </td>
+                </tr>
+                <tr class="border">
+                  <td class="border p-0.5">prueba</td>
+                  <td class="border p-0.5">texto de prueba</td>
+                  <td class="border p-0.5">1961</td>
+                  <td class="flex justify-end p-0.5">
+                    <a
+                      href="#"
+                      role="boton"
+                      class="flex justify-center items-center box-border w-fit h-6 mx-1 px-1 border-solid border rounded border-neutral-200 bg-neutral-100 text-center text-neutral-600 uppercase text-xs"
+                      ><img
+                        src="./icons/trash-solid.svg"
+                        alt="borrar"
+                        class="w-4 h-4"
+                    /></a>
+                    <a
+                      href="#"
+                      role="boton"
+                      class="flex justify-center items-center box-border w-fit h-6 mx-1 px-1 border-solid border rounded border-neutral-200 bg-neutral-100 text-center text-neutral-600 uppercase text-xs"
+                      ><img
+                        src="./icons/eye-solid.svg"
+                        alt="ver"
+                        class="w-4 h-4"
+                    /></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <!-- seccion de pie -->
+          <section class="flex items-center justify-end mt-2 px-1 border-t">
+            <!-- grupo de botones -->
+            <div class="flex"></div>
+          </section>
+        </article>
+        <!-- alerta -->
+        <div
+          role="alert"
+          class="flex gap-2 w-1/2 m-2 p-1 border rounded text-sm bg-neutral-100">
+          <img
+            src="./icons/circle-exclamation-solid.svg"
+            alt="alerta!"
+            class="w-6 h-6 mt-1 ml-1" />
+          <div role="group">
+            <p role="text" class="font-medium">Alerta o aviso.</p>
+            <p role="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+              quod pariatur natus, ab possimus dolore?
+            </p>
+            <div role="grupo-de-botones" class="flex justify-end">
+              <a
+                href="#"
+                role="boton"
+                class="flex justify-center items-center box-border w-fit h-6 m-2 p-1 border-solid border rounded border-neutral-200 bg-neutral-100 text-center text-neutral-600 uppercase text-xs"
+                >editar</a
+              >
+              <a
+                href="#"
+                role="boton"
+                class="flex justify-center items-center box-border w-fit h-6 m-2 p-1 border-solid border rounded border-neutral-200 bg-neutral-100 text-center text-neutral-600 uppercase text-xs"
+                >editar</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- formulario en seccion -->
+        <article class="container m-2 border rounded border-neutral-200">
+          <section
+            class="flex items-center justify-between px-1 bg-neutral-200">
+            <span class="text-sm capitalize">titulo de seccion</span>
+            <div role="grupo-de-botones" class="flex"></div>
+          </section>
+          <section
+            role="cuerpo"
+            class="flex flex-col mt-2 px-1 text-sm capitalize">
+            <!-- formulario -->
+            <span class="mb-2 font-bold">formulario</span>
+            <form class="w-full">
+              <!-- este es un grupo de inputs por tema -->
+              <fieldset
+                class="flex flex-wrap mb-2 border rounded border-neutral-200">
+                <legend>datos personales</legend>
+                <!-- este grupo es un solo input -->
+                <div class="flex flex-col gap-1 p-2 min-w-1/3 grow">
+                  <span>
+                    <label for="nombre">nombre</label>
+                    <span class="text-red-600">*</span>
+                    <span class="text-red-400 text-xs"
+                      >error de validación</span
+                    >
+                  </span>
+                  <input
+                    type="text"
+                    name="nombre"
+                    id="nombre"
+                    class="border border-neutral-200 focus:outline-none focus:ring focus:ring-neutral-300" />
+                </div>
+                <!-- este grupo es un solo input -->
+                <div class="flex flex-col gap-1 p-2 w-1/2">
+                  <span>
+                    <label for="email">email</label>
+                    <span class="text-red-600">*</span>
+                  </span>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="border border-neutral-200 focus:outline-none focus:ring focus:ring-neutral-300" />
+                </div>
+                <!-- este grupo es un solo input -->
+                <div class="flex flex-col gap-1 p-2 w-1/2">
+                  <span>
+                    <label for="telefono">telefono</label>
+                    <span class="text-red-600">*</span>
+                  </span>
+                  <input
+                    type="tel"
+                    name="telefono"
+                    id="telefono"
+                    class="border border-neutral-200 focus:outline-none focus:ring focus:ring-neutral-300" />
+                </div>
+              </fieldset>
+              <!-- este es un grupo de inputs por tema -->
+              <fieldset
+                class="flex flex-wrap mb-2 border rounded border-neutral-200">
+                <legend>datos de una mascota</legend>
+                <!-- este grupo es un solo input -->
+                <div class="flex flex-col gap-1 p-2 w-1/2">
+                  <span>
+                    <label for="nombre-mascota">nombre</label>
+                    <span class="text-red-600">*</span>
+                  </span>
+                  <input
+                    type="text"
+                    name="nombre-mascota"
+                    id="nombre-mascota"
+                    class="border border-neutral-200 focus:outline-none focus:ring focus:ring-neutral-300" />
+                </div>
+                <!-- este grupo es un solo input -->
+                <div class="flex flex-col gap-1 p-2 w-1/2">
+                  <span>
+                    <label for="especie">especie</label>
+                    <span class="text-red-600">*</span>
+                  </span>
+                  <input
+                    type="text"
+                    name="especie"
+                    id="especie"
+                    class="border border-neutral-200 focus:outline-none focus:ring focus:ring-neutral-300" />
+                </div>
+                <!-- este grupo es un solo input -->
+                <div class="flex flex-col gap-1 p-2 w-1/2">
+                  <span>
+                    <label for="color">color</label>
+                    <span class="text-red-600">*</span>
+                  </span>
+                  <input
+                    type="text"
+                    name="color"
+                    id="color"
+                    class="border border-neutral-200 focus:outline-none focus:ring focus:ring-neutral-300" />
+                </div>
+                <!-- este grupo es un solo input -->
+                <div class="flex flex-col gap-1 p-2 w-1/2">
+                  <span>
+                    <label for="personalidad">personalidad</label>
+                    <span class="text-red-600">*</span>
+                  </span>
+                  <input
+                    type="text"
+                    name="personalidad"
+                    id="personalidad"
+                    class="border border-neutral-200 focus:outline-none focus:ring focus:ring-neutral-300" />
+                </div>
+              </fieldset>
+              <!-- botones del formulario -->
+              <div role="grupo-de-botones" class="flex justify-end">
+                <a
+                  href="#"
+                  class="flex justify-center items-center box-border w-fit h-6 m-2 p-1 border-solid border rounded border-neutral-600 bg-neutral-600 text-center text-neutral-100 uppercase text-xs"
+                  >cancelar</a
+                >
+                <!-- en un formulario, un boton de envio debe ser: <input> o <button> tipo submit -->
+                <button
+                  type="submit"
+                  class="flex justify-center items-center box-border w-fit h-6 m-2 p-1 border-solid border rounded border-emerald-600 bg-emerald-600 text-center text-neutral-100 uppercase text-xs">
+                  guardar
+                </button>
+              </div>
+            </form>
+          </section>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
